@@ -13,7 +13,7 @@ public class Solution {
 
         while (left < right){
             //水桶的高度有低边决定，所以要判断左右高度哪一个低
-            if(height[left] < height[right]){
+            if(height[left] < height[right]){//这里做了最低高度的判定，所以后面ans的累加，就是最低高度的累加
                 if(height[left] >= leftMax){
                     leftMax = height[left];//注意不能将高度和索引搞混
                 }else{//如果最大左边大于历史左边，就计算总容积
